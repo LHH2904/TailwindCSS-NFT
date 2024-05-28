@@ -3,4 +3,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply md:mb-2 text-[36px] font-bold text-white;
+  }
 
+  h2 {
+    @apply mb-1 text-[44px] font-bold;
+  }
+
+  h3 {
+    @apply mb-1 text-[22px] font-bold;
+  }
+  h4 {
+    @apply mb-1 text-xl font-bold;
+  }
+
+  a {
+    @apply no-underline text-blue-600 hover:text-purple-400 transition;
+  }
+
+  input,
+  select {
+    @apply text-slate-500 p-1 mb-1 border border-slate-300 rounded-sm outline-none;
+  }
+
+  select {
+    @apply pr-8;
+  }
+
+  input[type="text"] {
+    @apply placeholder:italic disabled:bg-slate-100;
+  }
+
+  input[type="checkbox"] {
+    @apply p-2 accent-purple-500 mr-2 mt-0.5;
+  }
+
+  label {
+    @apply text-sm text-slate-700 font-medium leading-4;
+  }
+}
