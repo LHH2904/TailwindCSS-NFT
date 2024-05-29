@@ -5,7 +5,7 @@
 
 @layer base {
   h1 {
-    @apply md:mb-2 text-[36px] font-bold text-white;
+    @apply md:mb-2 text-[28px] font-bold text-white;
   }
 
   h2 {
@@ -20,7 +20,7 @@
   }
 
   a {
-    @apply no-underline text-blue-600 hover:text-purple-400 transition;
+    @apply no-underline text-white hover:text-purple-400 transition;
   }
 
   input,
