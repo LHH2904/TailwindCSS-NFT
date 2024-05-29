@@ -18,6 +18,7 @@ module.exports = {
         btnHover: "#0035EE",
         Grey: "#B1B5C1",
         dark: "#020005",
+        dark2: "#131528",
       },
     },
   },
