@@ -4,10 +4,6 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply md:mb-2 text-[28px] font-bold text-white;
-  }
-
   h2 {
     @apply mb-1 text-[44px] font-bold;
   }
