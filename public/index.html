@@ -6,134 +6,285 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Website</title>
     <link href="../public/css/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6cd3867cb2.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-black font-Grottesk">
-
-    <header class="mt-[42px]">
-        <div class="max-w-screen-lg mx-auto">
-            <nav class="flex flex-row justify-between items-center mt-[18px] mx-[15px] md:flex-row space-x-10">
+    <!-- Header -->
+    <header class="lg:mt-9 mt-[18px] mx-[18px] max-w-[1170px] lg:mx-auto mb-[50px] lg:mb-[94px] w-full">
+        <nav class="container flex items-center justify-between">
+            <div class="logo">
                 <img src="../public/img/Logo.png" alt="" class="h-[34px] w-[99px]">
-                <div class="flex flex-row space-x-[18px] items-center md:hidden">
-                    <a href=""><img src="../public/img/icon/Search.png" alt="" class="size-6 "></a>
-                    <a href=""><img src="../public/img/icon/Menu.png" alt="" class="w-[18px] h-[16px]"></a>
-                </div>
-                <div class="flex-row hidden md:flex gap-x-8">
-                    <div class="flex flex-row space-x-3">
-                        <a href="" class="mt-2"><img src="../public/img/icon/Search.png" alt="" class="size-6"></a>
-                        <input type="text" placeholder="Search collection, item or user">
+            </div>
+            <div class="flex-row hidden gap-12 lg:flex search-menu">
+                <div class="relative mt-2 w-[400px] rounded-md shadow-sm">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <img src="../public/img/icon/Search.png" alt="" class="size-6">
                     </div>
-                    <div class="items-center hidden space-x-6 md:flex">
-                        <a href="" class="text-Grey">Explore</a>
-                        <a href="" class="text-Grey">Create</a>
-                        <a href="" class="text-Grey">Page</a>
-                        <a href=""><img src="../public/img/User.png" alt="" class="size-10"></a>
-                        <button class="px-4 py-2 text-white focus:outline-none">Connect Wallet</button>
-                    </div>
+                    <input type="text" name="price" id="price"
+                        class="w-full rounded-md border-0 py-1.5 pl-11 pr-20 text-Grey ring-1 ring-inset ring-dark2 placeholder:text-Grey focus:ring-2 focus:ring-inset focus:ring-gray-600 bg-black"
+                        placeholder="Search collection, item or user" />
                 </div>
-            </nav>
 
-            <div class="mt-[94px] flex flex-col md:flex-row md:justify-center items-center max-w-screen-lg mx-[15px]">
-                <!-- left item -->
-                <div class="text-left basis-1/2">
-                    <h1 class="md:text-[64px]">Buy, Sell, And</h1>
-                    <div class="flex flex-row items-center">
-                        <img src="../public/img/Rectangle 5179.png" class="md:w-[210px] md:h-[64px] w-[114px] h-[38px]"
-                            alt="">
-                        <h1 class="ml-2 md:text-[64px] mb-0">Showcase</h1>
-                    </div>
-                    <div class="flex flex-row items-center">
-                        <h1 class="mr-1.5 md:text-[64px]">Super NFTs</h1>
-                        <img src="../public/img/Rectangle 5180.png" alt="" class="md:size-[70px] size-[38px]">
-                    </div>
-                </div>
-                <!-- right item -->
-                <div class="flex flex-col basis-1/2">
-                    <p class="pl-8 font-normal text-left text-Grey">Discover, collect, and sell extraordinary NFTs
-                        through
-                        our
-                        awesome
-                        platform.
-                        Express yourself by your
-                        artwork though us.</p>
-                    <div class="my-[30px] ml-8">
-                        <a href="" class="py-[15px] px-[35px] text-white rounded-md bg-Blue hover:bg-btnHover">Explore
-                            NFTs</a>
-                    </div>
-                </div>
+                <ul class="flex items-center justify-end flex-1 gap-12">
+                    <li><a href="" class="text-Grey">Explore</a></li>
+                    <li><a href="" class="text-Grey">Create</a></li>
+                    <li><a href="" class="text-Grey">Page</a></li>
+                    <a href="" class=""><img src="../public/img/User.png" alt="" class="size-10"></a>
+                    <button class="px-4 py-2 text-white rounded-lg bg-dark2-lg hover:bg-slate-600">Connect
+                        Wallet</button>
+                </ul>
             </div>
-
-            <div class="max-w-screen-lg flex flex-row mx-[15px] space-x-3 my-[50px] md:space-x-[30px]">
-                <div class="h-[160px] relative">
-                    <img src="../public/img/Rectangle 5173.png" alt="" class="">
-                    <img src="../public/img/Group 18530.png" alt=""
-                        class="absolute size-[15px] md:size-[26px] top-0.5 right-0.5">
-                </div>
-                <div class="h-[160px] relative">
-                    <img src="../public/img/Rectangle 5178.png" alt="" class="">
-                    <img src="../public/img/Group 18530.png" alt=""
-                        class="absolute size-[15px] md:size-[26px] top-0.5 right-0.5">
-                </div>
-                <div class="h-[160px] relative">
-                    <img src="../public/img/Rectangle 5177.png" alt="" class="">
-                    <img src="../public/img/Group 18530.png" alt=""
-                        class="absolute size-[15px] md:size-[26px] top-0.5 right-0.5">
-                </div>
+            <div class="flex flex-row gap-[18px] items-center lg:hidden md:hidden justify-between">
+                <a href=""><img src="../public/img/icon/Search2.png" alt="" class="size-6"></a>
+                <a href=""><img src="../public/img/icon/Menu.png" alt="" class="w-[18px] h-[16px]"></a>
             </div>
-        </div>
-        <div class="w-full">
-            <div class="h-16 bg-Yellow md:h-32">
-                <div class="h-16 -translate-y-1 bg-Blue md:h-32 md:-translate-y-3 rotate-3 md:rotate-4">
-                    <img src="../public/img/Group 18535.png" alt="" class="pt-4 mt-12 md:mt-80 md:pt-6">
-                </div>
-            </div>
-        </div>
+        </nav>
     </header>
 
-    <section id="trending text-white" class="w-full mt-44">
+    <!-- Hero -->
+    <section class="max-w-[1170px] lg:mx-auto mx-[18px] lg:mb-[57px] mb-[50px] w-full">
+        <div class="container flex flex-col items-start gap-3 lg:flex-row lg:items-center lg:justify-between">
+            <div class="flex flex-col basis-8/12">
+                <h1 class="lg:text-[80px] text-[36px] font-bold text-white">Buy, Sell,
+                    And
+                </h1>
+                <div class="flex flex-row items-center">
+                    <img src="../public/img/Rectangle 5179.png"
+                        class="lg:w-[210px] lg:h-[70px] w-[114px] h-[38px] lg:mr-5 mr-3" alt="">
+                    <h1 class="lg:text-[80px] text-[36px] font-bold text-white">
+                        Showcase
+                    </h1>
+                </div>
+                <div class="flex flex-row items-center">
+                    <h1 class="mr-3 lg:mr-5 lg:text-[80px] text-[36px] font-bold text-white">
+                        Super NFTs</h1>
+                    <img src="../public/img/Rectangle 5180.png" alt="" class="lg:size-[70px] size-[38px]">
+                </div>
+            </div>
+            <!-- right item -->
+            <div class="flex flex-col gap-[38px] basis-4/12">
+                <p class="text-base font-normal text-Grey">Discover, collect, and sell
+                    extraordinary NFTs
+                    through
+                    our
+                    awesome
+                    platform.
+                    Express yourself by your
+                    artwork though us.</p>
+                <button
+                    class="w-[180px] py-[15px] px-[35px] text-white font-semibold rounded-lg bg-Blue hover:bg-btnHover">Explore
+                    NFTs</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-[1170px] flex lg:mx-auto gap-[9px] lg:gap-[30px] ml-[18px]">
+        <div class="relative">
+            <img src="../public/img/Rectangle 5173.png" alt="" class="">
+            <img src="../public/img/Group 18530.png" alt=""
+                class="absolute size-[15px] lg:size-[26px] top-0.5 right-0.5">
+        </div>
+        <div class="relative">
+            <img src="../public/img/Rectangle 5178.png" alt="" class="">
+            <img src="../public/img/Group 18530.png" alt=""
+                class="absolute size-[15px] lg:size-[26px] top-0.5 right-0.5">
+        </div>
+        <div class="relative">
+            <img src="../public/img/Rectangle 5177.png" alt="" class="">
+            <img src="../public/img/Group 18530.png" alt=""
+                class="absolute size-[15px] lg:size-[26px] top-0.5 right-0.5">
+        </div>
+    </div>
+
+    <div class="w-full">
+        <div class="h-[72px] bg-Yellow lg:h-[146px]">
+            <div class="h-[72px] -translate-y-0.5 bg-Blue lg:h-[146px] lg:-translate-y-0.5 rotate-3">
+                <img src="../public/img/Group 18535.png" alt=""
+                    class="pt-6 mt-12 lg:mt-[140px] lg:pt-8 mb-[50px] -rotate-1">
+            </div>
+        </div>
+    </div>
+
+    <section id="trending" class="w-full text-white mt-[270px] lg:mt-[166px] lg:mb-[160px] mb-[70px]">
         <div
             class="flex flex-col md:flex-row w-lg h-[470px] justify-center md:items-center items-start md:space-x-[130px] space-x-0 mx-[18px]">
             <img src="../public/img/Rectangle 8.png" alt="" class="object-cover h-full">
             <div class="t-right">
-                <h1 class="md:text-4xl mt-[30px]">JUNK FOOD PARTY #137</h1>
+                <h1 class="lg:text-4xl mt-[30px] font-bold">JUNK FOOD PARTY #137</h1>
                 <div class="mt-2 md:mt-4">
-                    <span class="text-sm text-slate-400">Created by </span><span
-                        class="text-sm font-semibold text-blue-500">MitsuoKatori</span>
+                    <span class="text-base text-slate-400">Created by </span><span
+                        class="text-base font-semibold text-blue-500">MitsuoKatori</span>
                 </div>
-                <div class="flex flex-row space-x-5 md:mt-[38px] mt-[18px]">
-                    <div class="flex flex-col items-center item1">
+                <div class="flex flex-row space-x-5 md:mt-[38px] mt-[18px] items-center">
+                    <div class="flex flex-col items-center px-4 py-[10px] item1 bg-dark2">
                         <p class="font-bold text-white">0</p>
                         <p class="text-Grey">Days</p>
                     </div>
-                    <div class="flex flex-col items-center item2">
+                    <div class="flex flex-col items-center px-4 py-[10px] item2 bg-dark2">
                         <p class="font-bold text-white">4</p>
                         <p class="text-Grey">HRS</p>
                     </div>
-                    <div class="flex flex-col items-center item2">
+                    <div class="flex flex-col items-center px-4 py-[10px] item2 bg-dark2">
                         <p class="font-bold text-white">17</p>
                         <p class="text-Grey">MINS</p>
                     </div>
-                    <div class="flex flex-col items-center item2">
+                    <div class="flex flex-col items-center px-4 py-[10px] item2 bg-dark2">
                         <p class="font-bold text-white">59</p>
                         <p class="text-Grey">SECS</p>
                     </div>
                 </div>
-                <div class="flex flex-col leading-5 md:mt-[18px] mt-[30px]">
+                <div class="flex flex-col leading-5 lg:mt-[18px] mt-[30px]">
                     <span class="text-sm text-slate-400">Current Bid</span>
                     <span class="font-bold text-white">1.0324 ETH</span>
                 </div>
-                <div class="flex md:flex-row md:mt-[38px] mt-[30px] flex-col  gap-3">
-                    <a href="" class="py-[15px] px-[35px] bg-Blue rounded-lg hover:opacity-80 w-[180px] h-[60px] ">Place
-                        a
-                        Bid</a>
-                    <a href=""
-                        class="py-[15px] px-[35px] bg-dark2 rounded-lg hover:opacity-80 md:w-[180px] w-[200px] h-[60px]">View
-                        Artwork</a>
+                <div class="flex lg:flex-row lg:mt-[38px] mt-[30px] flex-col gap-3">
+                    <button class="py-[15px] px-[35px] bg-Blue rounded-lg hover:opacity-80 w-[180px] h-[60px]">Place a
+                        Bird
+                    </button>
+                    <button
+                        class="py-[15px] px-[35px] bg-dark2 rounded-lg hover:opacity-80 lg:w-[180px] w-[200px] h-[60px]">View
+                        Artwork
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="features-collection" class="mt-[160px] w-full px-5 py-5 max-w-[1170px] mx-auto">
+        <div class="flex flex-col justify-center item-center ">
+            <div class="text-center w-[570px] mx-auto">
+                <h1>Featured Collections</h1>
+                <p class="font-normal text-Grey">Discover, collect, and sell extraordinary NFTs through our awesome
+                    platform.</p>
+            </div>
+            <div class="grid-cols-3 gap-[30px] grid mt-[60px]">
+                <div class="p-5 bg-dark2 rounded-xl group">
+                    <div class="w-full h-[330px] mb-5 relative">
+                        <img src="../public/img/Rectangle 5173.png" alt=""
+                            class="object-cover w-full h-full rounded-xl">
+                        <img src="../public/img/Group 18530.png" alt=""
+                            class="object-cover rounded-xl absolute size-[32px] top-1 right-1">
+                    </div>
+                    <h3 class="font-bold text-white text-[22px]">LuppyclubOfficial</h3>
+                    <div class="mb-4 text-white">
+                        Created by <a href="" class="text-blue-500">LuppyclubOfficial</a>
+                    </div>
+                    <div class="flex items-start justify-between mb-10">
+                        <div class="flex flex-col items-start">
+                            <span class="text-sm text-Grey">Current Bid</span><span
+                                class="text-lg font-semibold text-white">1.0324 ETH</span>
+                        </div>
+                        <div class="flex flex-col items-end">
+                            <span class="text-sm text-Grey">Remaining Time</span><span
+                                class="text-lg font-semibold text-white">12 : 03 : 44</span>
+                        </div>
+                    </div>
+                    <button
+                        class="hidden w-full p-4 text-lg font-semibold text-white transition-all duration-1000 bg-blue-500 rounded-md group-hover:block">Collect
+                        Now</button>
+                </div>
+                <div class="p-5 bg-dark2 rounded-xl group1">
+                    <div class="w-full h-[330px] mb-5 relative">
+                        <img src="../public/img/Rectangle 5173.png" alt=""
+                            class="object-cover w-full h-full rounded-xl">
+                        <img src="../public/img/Group 18530.png" alt=""
+                            class="object-cover rounded-xl absolute size-[32px] top-1 right-1">
+                    </div>
+                    <h3 class="font-bold text-white text-[22px]">LuppyclubOfficial</h3>
+                    <div class="mb-4 text-white">
+                        Created by <a href="" class="text-blue-500">LuppyclubOfficial</a>
+                    </div>
+                    <div class="flex items-start justify-between mb-10">
+                        <div class="flex flex-col items-start">
+                            <span class="text-sm text-Grey">Current Bid</span><span
+                                class="text-lg font-semibold text-white">1.0324 ETH</span>
+                        </div>
+                        <div class="flex flex-col items-end">
+                            <span class="text-sm text-Grey">Remaining Time</span><span
+                                class="text-lg font-semibold text-white">12 : 03 : 44</span>
+                        </div>
+                    </div>
+                    <button
+                        class="hidden w-full p-4 text-lg font-semibold text-white transition-all duration-1000 bg-blue-500 rounded-md group1-hover:block">Collect
+                        Now</button>
+                </div>
+                <div class="p-5 bg-dark2 rounded-xl group">
+                    <div class="w-full h-[330px] mb-5 relative">
+                        <img src="../public/img/Rectangle 5173.png" alt=""
+                            class="object-cover w-full h-full rounded-xl">
+                        <img src="../public/img/Group 18530.png" alt=""
+                            class="object-cover rounded-xl absolute size-[32px] top-1 right-1">
+                    </div>
+                    <h3 class="font-bold text-white text-[22px]">LuppyclubOfficial</h3>
+                    <div class="mb-4 text-white">
+                        Created by <a href="" class="text-blue-500">LuppyclubOfficial</a>
+                    </div>
+                    <div class="flex items-start justify-between mb-10">
+                        <div class="flex flex-col items-start">
+                            <span class="text-sm text-Grey">Current Bid</span><span
+                                class="text-lg font-semibold text-white">1.0324 ETH</span>
+                        </div>
+                        <div class="flex flex-col items-end">
+                            <span class="text-sm text-Grey">Remaining Time</span><span
+                                class="text-lg font-semibold text-white">12 : 03 : 44</span>
+                        </div>
+                    </div>
+                    <button
+                        class="hidden w-full p-4 text-lg font-semibold text-white transition-all duration-1000 bg-blue-500 rounded-md group-hover:block">Collect
+                        Now</button>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <button class="p-4 mt-16 text-lg font-normal text-white bg-blue-500 rounded-md ">View
+                    More
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="text-center w-[570px]">
+                <h1>Featured Collections</h1>
+                <p class="font-normal text-Grey">Discover, collect, and sell extraordinary NFTs through our awesome
+                    platform.</p>
+            </div>
+            <div class="collection">
+                <div class="flex flex-col items-center ">
+                    <div class="h-[160px] relative">
+                        <img src="../public/img/Rectangle 5173.png" alt="" class="">
+                        <img src="../public/img/Group 18530.png" alt=""
+                            class="absolute size-[15px] md:size-[26px] top-0.5 right-0.5">
+                    </div>
+                    <div>
+                        <h1 class="md:text-4xl mt-[30px]">JUNK FOOD PARTY #137</h1>
+                        <div class="mt-2 md:mt-4">
+                            <span class="text-sm text-slate-400">Created by </span><span
+                                class="text-sm font-semibold text-blue-500">MitsuoKatori</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="l-item">
+                            <div class="flex flex-col leading-5 md:mt-[18px] mt-[30px]">
+                                <span class="text-sm text-slate-400">Current Bid</span>
+                                <span class="font-bold text-white">1.0324 ETH</span>
+                            </div>
+                        </div>
+                        <div class="r-item">
+                            <div class="flex flex-col leading-5 md:mt-[18px] mt-[30px]">
+                                <span class="text-sm text-slate-400">Current Bid</span>
+                                <span class="font-bold text-white">1.0324 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="" class="py-[15px] px-[35px] bg-Blue rounded-lg hover:opacity-80 w-[180px] h-[60px] ">View
+                    More</a>
+            </div>
+        </div>
+
+    </section>
 
 </body>
 
